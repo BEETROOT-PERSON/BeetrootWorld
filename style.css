@@ -1,0 +1,69 @@
+body{
+    background-color:  rgb(236, 240, 241);
+    border: solid rgb(52, 73, 94);
+    display: flow-root;
+}
+header{
+    background-color: rgb(52, 73, 94);
+    margin: 0;
+}
+footer{
+    background-color: rgb(44, 62, 80);
+    text-align: center;
+}
+.link{
+    color: rgb(155, 89, 182);
+    font-weight: bolder;
+    font-style: italic;
+    margin: 5px;
+}
+form{
+    color: rgb(52, 73, 94);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: lighter;
+    border-style: dashed;
+    border-width: 3px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 3px;
+}
+#mainHeader{
+    color: rgb(241, 196, 15);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: lighter;
+    font-size: 45px;
+    text-align: center;
+    text-shadow: 3px 3px 5px darkgoldenrod;
+    margin: auto;
+}
+.headerSmall{
+    color: rgb(52, 73, 94);
+    font-family: Georgia, 'Times New Roman', serif;
+    margin: 5px;
+}
+#prompt{
+    color: rgb(52, 73, 94);
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: center;
+    margin: 1px;
+}
+.images{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(189, 195, 199);
+    box-shadow: 3px 3px 5px rgb(189, 195, 199);
+    margin: 10px;
+}
+#title2{
+    text-align: center;
+}
+#documentary{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(189, 195, 199);
+    box-shadow: 3px 3px 5px rgb(189, 195, 199);
+    margin: 10px;
+    margin-bottom: 30px;
+}
