@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beetroot World</title>
+        <link rel = "icon" type = "image/jpeg" href = "beetroots.jpg">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+
+    <body>
+        <header>
+            <div><h1 id = "mainHeader">Welcome to Beetroot World!</h1></div>
+            <a class = "link" style = "font-size: large;" href = "">Mission Statement</a>
+            <a class = "link" style = "font-size: large;" href = "">About Us</a>
+            <a class = "link" style = "font-size: large;" href = "">Contact Us</a>
+            <a class = "link" style = "font-size: large;" href = "">Partners</a><br>
+        </header>
+        <main>
+            <h3 id = "title1" class = "headerSmall">For those who dont know, these are beetroots:</h3>
+            <image class = "images" src = "beetroot.webp" height = 300 alt = "this is a beetroot"></image>
+            <video class = "video" id = "documentary" controls height = 240>
+                <source src = "beetrootvid.mp4">
+            </video>
+            <image class = "images" src = "beetroots.jpg" height = 300 alt = "this is also a beetroot"></image>
+            <h3 id = "title2" class = "headerSmall">You may ask, well what is so good about beetroots, well, here are some articles you can read to find out!</h3>
+            <a class = "link" href = "https://www.webmd.com/diet/health-benefits-beetroot"
+            target = "_blank"
+            title = "Health benefits of Beetroots">
+            Health benifits of Beetroots</a>
+            <a class = "link" href = "https://www.bbcgoodfood.com/recipes/collection/beetroot-recipes"
+            target = "_blank"
+            title = "recipes for beetroots"> Recipes for Beetroots</a>
+            <a class = "link" href = "https://www.justbeetit.com/history-of-the-beet"
+            target = "_blank"
+            title = "history of beetroots">History of Beetroots</a>
+            <br>
+            <br>
+            <form action = "index.php" method = "post" enctype="multipart/form-data">
+                <h3 id = "prompt">Sign up for our newsletter!</h3>
+                <label for = "fullName">Enter your name:</label>
+                <input type = "text" id = "fullName" placeholder = "full name please" required><br>
+
+                <label for = "email>">Email:</label>
+                <input type = "email" id = "email" placeholder = "youremail@gmail.com" required><br>
+    
+                <label for = "option">Would you like out monthly or weekly newsletter?</label><br>
+                
+                <label for = "Weekly">Weekly</label>
+                <input type = "radio" id = "option" value = "Weekly"><br>
+                <label for = "Monthly">Monthly</label>
+                <input type = "radio" id = "option" value = "Monthly"><br>
+    
+                <label for = "choice">Would you reccomend us to a friend?</label>
+                <select id = "choice">
+                    <option value = "yes">Yes</option>
+                    <option value = "no">No</option>
+                </select><br>
+    
+                <label for = "checkbox">Do you like beetroots?</label>
+                <input type = "checkbox" id = "checkbox"><br>
+
+                <input type = "reset">
+                <input type = "submit">
+            </form>
+            <br>
+        </main>
+        <footer style = "color: rgb(189, 195, 199)">
+            Author: Luca Critac<br>
+            &copy; copyright 2024<br>
+            <small><a class = "link" href = "mailto:lucacritac@gmail.com">Email Us!</a><br></small>
+        </footer>
+    </body>
+</html>
