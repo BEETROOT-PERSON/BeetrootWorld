@@ -9,20 +9,20 @@
     <body>
         <header>
             <div><h1 id = "mainHeader">Welcome to Beetroot World!</h1></div>
-            <a class = "link" style = "font-size: large;" href = "">Mission Statement</a>
-            <a class = "link" style = "font-size: large;" href = "">About Us</a>
-            <a class = "link" style = "font-size: large;" href = "">Contact Us</a>
-            <a class = "link" style = "font-size: large;" href = "">Partners</a><br>
+            <div id = mainLinkControls><button  class = "mainlink"><a style = "font-size: large; color: rgb(155, 89, 182);" href = "">Mission Statement</a></button>
+            <button  class = "mainlink"><a style = "font-size: large; color: rgb(155, 89, 182);" href = "">About Us</a></button>
+            <button  class = "mainlink"><a style = "font-size: large; color: rgb(155, 89, 182);" href = "">Contact Us</a></button>
+            <button  class = "mainlink"><a style = "font-size: large; color: rgb(155, 89, 182);" href = "">Partners</a></button><br></div>
         </header>
         <main>
-            <h3 id = "title1" class = "headerSmall">For those who dont know, these are beetroots:</h3>
-            <image class = "images" src = "beetroot.webp" height = 300 alt = "this is a beetroot"></image>
-            <video class = "video" id = "documentary" controls height = 240>
-                <source src = "beetrootvid.mp4">
+            <h3 class = "headerSmall">For those who dont know, these are beetroots:</h3>
+            <div class = "container1"><image id = "img1" src = "beetroot.webp" height = 300 alt = "this is a beetroot"></image>
+            <video id = "img2" controls height = 240>
+                 <source src = "beetrootvid.mp4">
             </video>
-            <image class = "images" src = "beetroots.jpg" height = 300 alt = "this is also a beetroot"></image>
+            <image id = "img3" src = "beetroots.jpg" height = 300 alt = "this is also a beetroot"></image></div>
             <h3 id = "title2" class = "headerSmall">You may ask, well what is so good about beetroots, well, here are some articles you can read to find out!</h3>
-            <a class = "link" href = "https://www.webmd.com/diet/health-benefits-beetroot"
+            <div class = "linkcontrols"><a class = "link" href = "https://www.webmd.com/diet/health-benefits-beetroot"
             target = "_blank"
             title = "Health benefits of Beetroots">
             Health benifits of Beetroots</a>
@@ -31,10 +31,9 @@
             title = "recipes for beetroots"> Recipes for Beetroots</a>
             <a class = "link" href = "https://www.justbeetit.com/history-of-the-beet"
             target = "_blank"
-            title = "history of beetroots">History of Beetroots</a>
+            title = "history of beetroots">History of Beetroots</a></div>
             <br>
-            <br>
-            <form action = "" method = "post" enctype="multipart/form-data">
+            <form action = "index.php" method = "post" enctype="multipart/form-data">
                 <h3 id = "prompt">Sign up for our newsletter!</h3>
                 <label for = "fullName">Enter your name:</label>
                 <input type = "text" id = "fullName" placeholder = "full name please" required><br>
@@ -45,7 +44,7 @@
                 <label for = "option">Would you like out monthly or weekly newsletter?</label><br>
                 
                 <label for = "Weekly">Weekly</label>
-                <input type = "radio" id = "option" value = "Weekly"><br>
+                <input type = "radio" id = "option" value = "Weekly">
                 <label for = "Monthly">Monthly</label>
                 <input type = "radio" id = "option" value = "Monthly"><br>
     
@@ -58,15 +57,15 @@
                 <label for = "checkbox">Do you like beetroots?</label>
                 <input type = "checkbox" id = "checkbox"><br>
 
-                <input type = "reset">
-                <input type = "submit">
+                <div id = "formanip"><input type = "reset">
+                <input type = "submit"></div>
             </form>
             <br>
         </main>
-        <footer style = "color: rgb(189, 195, 199)">
+        <footer style = "color: rgb(189, 195, 199);">
             Author: Luca Critac<br>
-            &copy; copyright 2024<br>
-            <small><a class = "link" href = "mailto:lucacritac@gmail.com">Email Us!</a><br></small>
+            &copy; <del>Not Actually Copyright 2024</del><br>
+            <a class = "link" href = "mailto:lucacritac@gmail.com">Email Us!</a><br>
         </footer>
     </body>
 </html>
