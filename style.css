@@ -1,15 +1,51 @@
+/*colour Pallete:
+Midnight blue rgb(44, 62, 80) {use this for header + footer & main buttons}
+Sunflower rgb(241, 196, 15) {use this for highlights to silver & as an alt button colour}
+Silver rgb(189, 195, 199) {use this for main text}
+Amethyst rgb(155, 89, 182) {use for links & main highlight colour}
+Clouds rgb(236, 240, 241) {use as the main background of the website}
+Wet asphalt rgb(52, 73, 94) {use for content text and stuff}*/
 body{
     background-color:  rgb(236, 240, 241);
-    border: solid rgb(52, 73, 94);
+    border: solid rgb(44, 62, 80);
+    border-width: 5px;
     display: flow-root;
+    margin: 0;
+    padding: 0;
 }
 header{
-    background-color: rgb(52, 73, 94);
+    background-color: rgb(44, 62, 80);
     margin: 0;
 }
 footer{
     background-color: rgb(44, 62, 80);
     text-align: center;
+}
+#footertxt{
+    margin: 4px;
+}
+.mainlink{
+    font-weight: bold;
+    font-style: italic;
+    margin: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-color: rgb(189, 195, 199);
+    box-shadow: 1px 1px 4px rgb(241, 196, 15);
+    border-width: 4px;
+    background-color: rgb(44, 62, 80);
+}
+#mainLinkControls{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.linkcontrols{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .link{
     color: rgb(155, 89, 182);
@@ -27,14 +63,18 @@ form{
     text-align: center;
     margin: 3px;
 }
+#formanip{
+    margin: 5px;
+}
 #mainHeader{
-    color: rgb(241, 196, 15);
+    color: rgb(189, 195, 199);
     font-family: Georgia, 'Times New Roman', serif;
     font-weight: lighter;
     font-size: 45px;
     text-align: center;
-    text-shadow: 3px 3px 5px darkgoldenrod;
+    text-shadow: 3px 3px 5px rgb(241, 196, 15);
     margin: auto;
+    margin-bottom: 5px;
 }
 .headerSmall{
     color: rgb(52, 73, 94);
@@ -47,13 +87,27 @@ form{
     text-align: center;
     margin: 1px;
 }
-.images{
+#img1{
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
-    border-color: rgb(189, 195, 199);
-    box-shadow: 3px 3px 5px rgb(189, 195, 199);
-    margin: 10px;
+    border-color: rgb(155, 89, 182);
+    box-shadow: 2px 2px 5px rgb(155, 89, 182);
+}
+#img2{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(155, 89, 182);
+    box-shadow: 3px 3px 5px rgb(155, 89, 182);
+    margin-top: 30px;
+}
+#img3{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(155, 89, 182);
+    box-shadow: 3px 3px 5px rgb(155, 89, 182);
 }
 #title2{
     text-align: center;
@@ -67,3 +121,33 @@ form{
     margin: 10px;
     margin-bottom: 30px;
 }
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 100%;
+}
+#title2{
+    margin-top: 10px;
+}
+/*
+.noteToSelf{
+overflow: visible; {if content overflows over something with hidden, it will just overflow. This is the deafult option}
+overflow: hidden; {if content overflows over something with hidden, it will simply dissapear but you can still interact with it}
+[overflow: clip;
+[overflow-clip-margin: 13px {these 2 go together, if something overflows with clip, it acts like hidden but you choose how
+much will be able to overflow as a deafult option anyways, everything else is hidden}
+overflow: scroll; {if content overflows over something with scroll, anything that overflows will be contained
+and you have a built in scroll bar to see the rest of the content BUT the scroll bar still exists even if not needed}
+overflow: auto; <the preferred option for me lol> {just like scroll but if there is no need for a scroll bar, the bar will not show}
+
+display = this specifies if/how an element is displayed
+
+block-level = start on a new line, take up the full width available
+(h1, div, p, form, header, footer)
+
+inline = do not start on a new line, width is limited to what is needed
+(span, a, img)
+}
+*/
